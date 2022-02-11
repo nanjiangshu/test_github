@@ -1,8 +1,8 @@
 import os
 import sys
 
-from app1.run import app1
-from app2.run import app2
+from .app1.run import app1
+from .app2.run import app2
 
 if __name__ == '__main__':
     ap1 = app1(3,8)

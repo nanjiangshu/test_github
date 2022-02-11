@@ -12,9 +12,9 @@ class app1:
         """return a + b
         """
         c = self.a + self.b
-        print "%s: %d + %d = %d"%(__name__, self.a, self.b, c)
+        print("%s: %d + %d = %d"%(__name__, self.a, self.b, c))
     def multiplication(self):
         """return a * b
         """
         c = self.a * self.b
-        print "%s: %d * %d = %d"%(__name__, self.a, self.b, c)
+        print("%s: %d * %d = %d"%(__name__, self.a, self.b, c))
