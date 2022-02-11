@@ -232,7 +232,7 @@ argument-naming-style=snake_case
 
 # Regular expression matching correct argument names. Overrides argument-
 # naming-style.
-#argument-rgx=
+argument-rgx=^[a-z][a-z0-9]*((_[a-z0-9]+)*)?$
 
 # Naming style matching correct attribute names.
 attr-naming-style=snake_case
@@ -287,7 +287,12 @@ good-names=i,
            k,
            ex,
            Run,
-           _
+           _,
+           pk,
+           x,
+           y,
+           l,
+           m
 
 # Include a hint for the correct naming format with invalid-name.
 include-naming-hint=no
@@ -331,7 +336,7 @@ variable-naming-style=snake_case
 
 # Regular expression matching correct variable names. Overrides variable-
 # naming-style.
-#variable-rgx=
+variable-rgx=^[a-z][a-z0-9]*((_[a-z0-9]+)*)?$
 
 
 [TYPECHECK]
@@ -561,11 +566,6 @@ max-statements=50
 # Minimum number of public methods for a class (see R0903).
 min-public-methods=2
 
-# set variable-rgx and argument-rgx so that short variable names are also
-# allowed
-variable-rgx=^[a-z][a-z0-9]*((_[a-z0-9]+)*)?$
-argument-rgx=^[a-z][a-z0-9]*((_[a-z0-9]+)*)?$
-good-names=i,j,k,ex,Run,_,pk,x,y
 
 
 [EXCEPTIONS]
