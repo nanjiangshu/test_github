@@ -1,20 +1,21 @@
-#!/usr/bin/env python 
+#!/usr/bin/env python
 
-# A test python code
+"""A test python code"""
 
-class app1:
+
+class App1:
     """ simple arithmetic calculation
     """
     def __init__(self, a=1, b=2):
-        self.a = a
-        self.b = b
+        self.var_a = a
+        self.var_b = b
+
     def plus(self):
-        """return a + b
-        """
-        c = self.a + self.b
-        print("%s: %d + %d = %d"%(__name__, self.a, self.b, c))
+        """return a + b"""
+        c = self.var_a + self.var_b
+        print(f"{__name__}: {self.var_a} + {self.var_b} = {c}")
+
     def multiplication(self):
-        """return a * b
-        """
-        c = self.a * self.b
-        print("%s: %d * %d = %d"%(__name__, self.a, self.b, c))
+        """return a * b"""
+        c = self.var_a * self.var_b
+        print(f"{__name__}: {self.var_a} * {self.var_b} = {c}")

@@ -2,8 +2,8 @@
 import random
 import time
 
-from .app1.run import app1
-from .app2.run import app2
+from .app1.run import App1
+from .app2.run import App2
 
 
 def main():
@@ -11,14 +11,14 @@ def main():
     loop = 0
     while loop < 10:
         loop += 1
-        va = 1
-        vb = 100
-        vx1 = random.randint(va, vb)
-        vx2 = random.randint(va, vb)
-        vx3 = random.randint(va, vb)
-        ap1 = app1(vx1, vx2)
-        ap2 = app2(vx3)
-        print(f"loop = {loop}, vx1 = {vx1}, vx2 = {vx2}, vx3 = {vx3}")
+        a = 1
+        b = 100
+        x1 = random.randint(a, b)
+        x2 = random.randint(a, b)
+        x3 = random.randint(a, b)
+        ap1 = App1(x1, x2)
+        ap2 = App2(x3)
+        print(f"loop = {loop}, x1 = {x1}, x2 = {x2}, x3 = {x3}")
         ap1.plus()
         ap1.multiplication()
         ap2.sin()
