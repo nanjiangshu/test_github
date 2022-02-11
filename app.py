@@ -26,4 +26,4 @@ def run(max_loop=2):
         ap2.pow10()
         ap2.pow16()
         ap2.tan()
-        time.sleep(10)
+        time.sleep(1)
